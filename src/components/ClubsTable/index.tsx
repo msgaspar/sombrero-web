@@ -43,7 +43,7 @@ const ClubsTable: React.FC = () => {
           {
             title: '',
             field: 'url_escudo_svg',
-            width: 50,
+            width: 30,
             render: rowData => (
               <img
                 src={rowData.url_escudo_svg}
@@ -52,8 +52,8 @@ const ClubsTable: React.FC = () => {
               />
             ),
           },
-          { title: 'Nome', field: 'nome', width: 200 },
-          { title: 'Cartoleiro', field: 'cartoleiro', width: 200 },
+          { title: 'Nome', field: 'nome', width: 130 },
+          { title: 'Cartoleiro', field: 'cartoleiro', width: 150 },
           {
             title: 'Pontuação na rodada',
             field: 'pontuacao_atual',
@@ -64,12 +64,13 @@ const ClubsTable: React.FC = () => {
             title: 'Pontuação total',
             field: 'pontuacao_total',
             type: 'numeric',
-            width: 200,
+            width: 140,
           },
+
           {
             title: '',
             field: 'delete_club',
-            width: 100,
+            width: 50,
 
             render: rowData => (
               <button
