@@ -1,9 +1,13 @@
 import React from 'react';
 
-import { Title } from './styles';
+import ClubsTable from '../../components/ClubsTable';
 
 const Dashboard: React.FC = () => {
-  return <Title>Dashboard</Title>;
+  return (
+    <>
+      <ClubsTable />
+    </>
+  );
 };
 
 export default Dashboard;
