@@ -26,7 +26,6 @@ const ClubsTable: React.FC = () => {
   }, []);
 
   async function handleDeleteClub(club_id: number): Promise<void> {
-    console.log('oi');
     try {
       await api.delete(`/clubs/${club_id}`);
 
