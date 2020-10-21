@@ -31,6 +31,7 @@ const ClubsTable: React.FC = () => {
 
       setClubs(clubs.filter(club => club.id !== club_id));
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.log(err);
     }
   }

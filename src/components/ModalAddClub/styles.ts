@@ -50,7 +50,7 @@ export const Form = styled.form<FormProps>`
 export const Error = styled.span`
   display: block;
   color: #c53030;
-  margin-top: 8px;
+  margin-top: 3px;
 `;
 
 export const SearchResultsContainer = styled.div`
@@ -84,23 +84,5 @@ export const SearchResultsContainer = styled.div`
 
   button {
     border: none;
-  }
-`;
-
-export const SearchResultItem = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 600px;
-
-  min-height: 30px;
-  padding: 10px 30px;
-
-  font-size: 90%;
-
-  img {
-    width: 25px;
-    margin-right: 10px;
   }
 `;
