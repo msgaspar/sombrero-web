@@ -31,7 +31,7 @@ const Dashboard: React.FC = () => {
           </button>
         </OptionsContainer>
       </DashboardPanel>
-      <ClubsTable />
+      {!modalOpen && <ClubsTable />}
     </Container>
   );
 };

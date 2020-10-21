@@ -7,7 +7,7 @@ export const Container = styled.div`
   }
 
   tr {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   button {

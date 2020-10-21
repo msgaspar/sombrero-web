@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MaterialTable from 'material-table';
 
-import { FiTrash2 } from 'react-icons/fi';
+import { FiXCircle } from 'react-icons/fi';
 
 import api from '../../services/api';
 
@@ -47,12 +47,12 @@ const ClubsTable: React.FC = () => {
               <img
                 src={rowData.url_escudo_svg}
                 style={{ width: 20, borderRadius: '50%' }}
-                alt="escudo"
+                alt=" "
               />
             ),
           },
-          { title: 'Nome', field: 'nome', width: 130 },
-          { title: 'Cartoleiro', field: 'cartoleiro', width: 150 },
+          { title: 'Nome', field: 'nome', width: 180 },
+          { title: 'Cartoleiro', field: 'cartoleiro', width: 120 },
           {
             title: 'Pontuação na rodada',
             field: 'pontuacao_atual',
@@ -77,7 +77,7 @@ const ClubsTable: React.FC = () => {
                 className="icon"
                 onClick={() => handleDeleteClub(rowData.id)}
               >
-                <FiTrash2 />
+                <FiXCircle color="#c53030" size={22} strokeWidth="1.5px" />
               </button>
             ),
           },
@@ -86,6 +86,9 @@ const ClubsTable: React.FC = () => {
         title="Times cadastrados"
         options={{
           tableLayout: 'fixed',
+          pageSize: 20,
+          pageSizeOptions: [20, 50, 100],
+          draggable: false,
         }}
       />
     </Container>
