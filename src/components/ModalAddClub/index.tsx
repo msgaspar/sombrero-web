@@ -82,9 +82,9 @@ const ModalAddClub: React.FC<IModalProps> = ({
         />
         <button type="submit">Pesquisar</button>
       </Form>
-      {inputError && <Error>{inputError}</Error>}
 
       <SearchResultsContainer>
+        {inputError && <Error>{inputError}</Error>}
         <table>
           {!!searchResults.length && (
             <tr>
@@ -124,10 +124,6 @@ const ModalAddClub: React.FC<IModalProps> = ({
           ))}
         </table>
       </SearchResultsContainer>
-
-      <button type="button" onClick={setIsOpen}>
-        ok
-      </button>
     </Modal>
   );
 };

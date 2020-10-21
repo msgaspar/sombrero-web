@@ -6,7 +6,7 @@ interface FormProps {
 }
 
 export const Form = styled.form<FormProps>`
-  margin: 20px auto;
+  margin: 20px auto 0;
   max-width: 600px;
   display: flex;
 
