@@ -22,9 +22,27 @@ export const DashboardPanel = styled.div`
   margin-bottom: 30px;
 `;
 
-export const StatusContainer = styled.div``;
+export const StatusContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 100%;
+      margin-right: 7px;
+    }
+  }
+`;
 
 export const OptionsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   button {
     background-color: #29bf12;
     color: #fff;

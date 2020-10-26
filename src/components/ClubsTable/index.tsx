@@ -58,13 +58,19 @@ const ClubsTable: React.FC = () => {
             title: 'Pontuação na rodada',
             field: 'pontuacao_atual',
             type: 'numeric',
-            width: 200,
+            width: 100,
+          },
+          {
+            title: 'Pontuação s/ capitão',
+            field: 'pontuacao_sem_capitao',
+            type: 'numeric',
+            width: 100,
           },
           {
             title: 'Pontuação total',
             field: 'pontuacao_total',
             type: 'numeric',
-            width: 140,
+            width: 100,
           },
 
           {
